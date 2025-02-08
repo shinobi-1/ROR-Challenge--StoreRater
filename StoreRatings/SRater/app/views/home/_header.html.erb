@@ -1,0 +1,35 @@
+<nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-3">
+                    
+                    <div class="logo-icon" href ="/home">
+                        
+                        <svg  fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                              
+                        </svg>
+                        
+                    </div>
+                    <%= link_to "StoreRater", root_path,class:"text-xl font-bold text-gray-900"%>
+                    <%# <%= link_to "Roles", role_masters_path,class:"text-xl font-bold text-gray-900"  %> %>
+                    <%# <span class="text-xl font-bold text-gray-900">StoreRater</span> %>
+                </div>
+                <div class="flex items-center space-x-4">
+                    
+                    <%# <a href="/login" class="text-gray-600 hover:text-gray-900">Login</a> %>
+                    <%# <% if current_user %> %>
+                        <% if user_signed_in? %>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete }, class: "bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-150" %>
+  <%= link_to "Change Details", edit_user_registration_path, class: "text-gray-600 hover:text-gray-900" %>
+<% else %>
+  <%= link_to "Login", new_user_session_path, class: "text-gray-600 hover:text-gray-900" %>
+  <%= link_to "Sign Up", new_user_registration_path, class: "bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-150" %>
+<% end %>
+                    <%# <a href="/signup" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-150">Sign Up</a> %>
+                </div>
+            </div>
+        </div>
+    </nav>
+
