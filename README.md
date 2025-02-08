@@ -26,10 +26,8 @@ rails server
 
 ## Usage
 After installation, access the app at `http://localhost:3000`. 
-- Create an account to start rating and reviewing stores.
 
-## API Documentation
-(Provide details if applicable)
+
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
