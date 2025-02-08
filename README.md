@@ -32,8 +32,7 @@ After installation, access the app at `http://localhost:3000`.
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-## License
-This project is licensed under the MIT License.
+
 
 ## Acknowledgments
 Special thanks to all contributors and resources that helped in the development of this project.
